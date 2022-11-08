@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+#include <algorithm>
+#include <vector>
+using namespace std;
+int main ()
+{
+    int a, b, t;
+    cin >> a >> b;
+    while (b > 0)
+    {
+        t = b;
+        b = a%b;
+        a = t;
+    }
+    cout << a;
+}
